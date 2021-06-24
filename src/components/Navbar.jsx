@@ -37,41 +37,41 @@ const Navbar = () => {
               <div className='hidden md:block'>
                 <div className='ml-10 flex items-baseline space-x-4'>
                   <Link
-                    to='#'
+                    to='/'
                     className=' hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium'
                   >
                     Home
                   </Link>
 
                   <Link
-                    to='#'
+                    to='/blogs'
                     className='text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium'
                   >
-                    All Blogs
+                    Blogs
                   </Link>
                   <Link
-                    to='#'
+                    to='/blogs/health'
                     className='text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium'
                   >
                     Health
                   </Link>
 
                   <Link
-                    to='#'
+                    to='/blogs/wealth'
                     className='text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium'
                   >
                     Wealth
                   </Link>
 
                   <Link
-                    to='#'
+                    to='/blogs/wisdom'
                     className='text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium'
                   >
                     Wisdom
                   </Link>
 
                   <Link
-                    to='#'
+                    to='/shop'
                     className='text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium'
                   >
                     Shop

@@ -4,6 +4,11 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './views/Home';
 import About from './views/About';
+import Blogs from './views/Blogs';
+import Health from './views/Health';
+import Wealth from './views/Wealth';
+import Wisdom from './views/Wisdom';
+import Shop from './views/Shop';
 import Header from './components/Header';
 
 function App() {
@@ -12,13 +17,28 @@ function App() {
       <Navbar />
       <Header />
       <div className='App'>
-        <div className='max-w-7xl mx-auto py-6 sm:px-6 lg:px-8'>
+        <div className='max-w-7xl min-h-screen mx-auto py-6 sm:px-6 lg:px-8'>
           <Switch>
             <Route exact path='/'>
               <Home />
             </Route>
             <Route path='/about'>
               <About />
+            </Route>
+            <Route exact path='/blogs'>
+              <Blogs />
+            </Route>
+            <Route path='/blogs/health'>
+              <Health />
+            </Route>
+            <Route path='/blogs/wealth'>
+              <Wealth />
+            </Route>
+            <Route path='/blogs/wisdom'>
+              <Wisdom />
+            </Route>
+            <Route path='/shop'>
+              <Shop />
             </Route>
           </Switch>
         </div>

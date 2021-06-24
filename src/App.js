@@ -1,4 +1,3 @@
-import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -10,6 +9,7 @@ import Wealth from './views/Wealth';
 import Wisdom from './views/Wisdom';
 import Shop from './views/Shop';
 import Header from './components/Header';
+import BlogDetail from './components/BlogDetail';
 
 function App() {
   return (
@@ -39,6 +39,9 @@ function App() {
             </Route>
             <Route path='/shop'>
               <Shop />
+            </Route>
+            <Route path='/blogs/blog-detail'>
+              <BlogDetail />
             </Route>
           </Switch>
         </div>

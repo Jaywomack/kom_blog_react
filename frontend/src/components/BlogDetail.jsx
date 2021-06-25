@@ -1,4 +1,3 @@
-import SocialIcons from './SocialIcons';
 const BlogPreview = () => {
   return (
     <div className='post'>

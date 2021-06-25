@@ -1,18 +1,20 @@
 import BlogPreview from '../components/BlogPreview';
+
+import { useEffect, useState } from 'react';
 const Wealth = () => {
+  const [posts, setPosts] = useState([]);
+  useEffect(() => {
+    fetch('http://localhost:1337/posts')
+      .then((response) => response.json())
+      .then((data) => setPosts(data));
+  }, []);
+
   return (
-    <div className='wealth'>
-      <div className='wealth-blogs grid grid-cols-1 gap-8 justify-items-center'>
-        <h1 className='text-4xl my-12 '>Wealth Blogs</h1>
-        <BlogPreview />
-        <BlogPreview />
-        <BlogPreview />
-        <BlogPreview />
-        <BlogPreview />
-        <BlogPreview />
-        <BlogPreview />
-        <BlogPreview />
-        <BlogPreview />
+    <div className='home'>
+      <div className='top-rated grid grid-cols-1 gap-8 justify-items-center'>
+        {posts.map((post) => (
+          <BlogPreview post={post} key={post.id} />
+        ))}
       </div>
     </div>
   );

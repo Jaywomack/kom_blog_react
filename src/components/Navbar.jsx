@@ -1,22 +1,5 @@
-import { Link } from 'react-router-dom';
-// const Navbar = () => {
-//   return (
-//     <nav>
-//       <ul className='list-none text-2xl grid  '>
-//         <li>
-//           <Link to='/'>KOM</Link>
-//         </li>
-//         <li>
-//           <Link to='/about'>About</Link>
-//         </li>
-//       </ul>
-//     </nav>
-//   );
-// };
-
-// export default Navbar;
-
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Transition } from '@headlessui/react';
 
 const Navbar = () => {

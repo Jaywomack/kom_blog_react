@@ -36,7 +36,16 @@ const SocialIcons = () => {
           rel='noopener'
           target='_blank'
         >
-          <i className='fab fa-youtube-square fa-2x '></i>
+          <i className='fab fa-youtube-square fa-2x  mr-3'></i>
+        </Link>
+      </li>
+      <li>
+        <Link
+          to={{ pathname: 'https://snapchat.com' }}
+          rel='noopener'
+          target='_blank'
+        >
+          <i className='fab fa-snapchat-square fa-2x '></i>
         </Link>
       </li>
     </ul>

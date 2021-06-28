@@ -9,10 +9,13 @@ const Wealth = () => {
       .then((data) => setPosts(data));
   }, []);
 
+  const wealthPosts = posts.filter((post) => {
+    return post.tag === 'wealth';
+  });
   return (
     <div className='home'>
       <div className='top-rated grid grid-cols-1 gap-8 justify-items-center'>
-        {posts.map((post) => (
+        {wealthPosts.map((post) => (
           <BlogPreview post={post} key={post.id} />
         ))}
       </div>

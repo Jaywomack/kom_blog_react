@@ -59,12 +59,6 @@ const Navbar = () => {
                   >
                     Shop
                   </Link>
-                  <Link
-                    to='/blogs/blog-detail'
-                    className='text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium'
-                  >
-                    blog-detail
-                  </Link>
                 </div>
               </div>
             </div>

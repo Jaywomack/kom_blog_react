@@ -8,11 +8,13 @@ const Wisdom = () => {
       .then((response) => response.json())
       .then((data) => setPosts(data));
   }, []);
-
+  const wisdomPosts = posts.filter((post) => {
+    return post.tag === 'wisdom';
+  });
   return (
     <div className='home'>
       <div className='top-rated grid grid-cols-1 gap-8 justify-items-center'>
-        {posts.map((post) => (
+        {wisdomPosts.map((post) => (
           <BlogPreview post={post} key={post.id} />
         ))}
       </div>

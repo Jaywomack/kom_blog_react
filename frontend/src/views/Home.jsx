@@ -1,5 +1,3 @@
-import BlogPreview from '../components/BlogPreview';
-
 const Home = () => {
   return (
     <div className='home'>
